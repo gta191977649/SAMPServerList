@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+body{
+	-webkit-font-smoothing: antialiased; 
+	margin:0px;
+	padding:0px;
+	font-family: "微软雅黑";
+	
+	
+}
+#header {
+	background-color:#0099CC;
+	padding-top:1%;
+	padding-bottom:1%;
+	padding-left:2%;
+	
+}
+#header h1{
+	text-shadow:2px 2px 2px #286586;	
+	font-size:50pt;
+	color:#fff;
+		
+}
+#contrainer
+{
+	
+	
+}
+.am-slides span
+{
+   color: white; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px; 
+}
+@media only screen and (max-width: 480px) {
+	#header h1{
+		font-size:40pt;
+		color:#fff;
+		text-align:center;
+
+	}
+	
+} 
