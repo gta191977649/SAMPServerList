@@ -1,14 +1,14 @@
 <!doctype html>
-<html>
+<html><!-- InstanceBegin template="/Templates/Style.dwt.php" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
-<!-- TemplateBeginEditable name="doctitle" -->
-<title>無題ドキュメント</title>
-<!-- TemplateEndEditable -->
-<!-- TemplateBeginEditable name="head" -->
-<!-- TemplateEndEditable -->
-<link href="../assets/css/amazeui.min.css" rel="stylesheet" type="text/css"/>
-<link href="../assets/css/style.css" rel="stylesheet" type="text/css" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title> SAMP 服务器</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+<link href="assets/css/amazeui.min.css" rel="stylesheet" type="text/css"/>
+<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
 <!-- 必要的JS文件 -->
 <script type="text/javascript" src="http://cdn.gbtags.com/jquery/1.11.1/jquery.min.js"></script>
 <script type="text/javascript" src="http://cdn.gbtags.com/amazeui/2.4.2/amazeui.min.js"></script>
@@ -84,7 +84,7 @@
 </div>
   </header>
   	<div class="am-container">
-		<div class="am-g am-g-fixed"><!-- TemplateBeginEditable name="Main" -->Main<!-- TemplateEndEditable -->
+		<div class="am-g am-g-fixed"><!-- InstanceBeginEditable name="Main" --><h1>服务器 XXX 的实时数据<hr/></h1><!-- InstanceEndEditable -->
 			
 		</div>
 		
@@ -96,4 +96,4 @@
 </footer>
 
 </body>
-</html>
+<!-- InstanceEnd --></html>

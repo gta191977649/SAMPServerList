@@ -17,6 +17,8 @@
 			<th>模式</th>
 			<th>玩家</th>
 			<th>IP</th>
+			<th>推荐度</th>
+			<th>最后检测</th>
 		  </tr>
 		  </thead>
 		  <tbody>
@@ -25,15 +27,16 @@
 		{  
 			
 			//$info = getBaiscInfo($row['IP'],$row['PORT']);实时查询代码(耗资源...)
-			if($info != null)
-			{
-				echo '<tr>';
-				echo '<td>'. iconv("GB2312","UTF-8",$info['hostname']).'</td>';
-				echo '<td>'.iconv("GB2312","UTF-8",$info['gamemode']).'</td>';
-				echo '<td>'.$info['players'].'/'.$info['maxplayers'].'</td>';
-				echo '<td>'.iconv("GB2312","UTF-8",$row['IP']).'</td>';
-				echo '</tr>';
-			}
+		
+			echo '<tr>';
+			echo '<td>'.$row['NAME'].'</td>';
+			echo '<td>'.$row['GAMEMODE'].'</td>';
+			echo '<td>'.$row['PCURRENT'].'/'.$row['PMAX'].'</td>';
+			echo '<td>'.$row['IP'].'</td>';
+			echo '<td>'.$row['RATE'].'</td>';
+			echo '<td>'.$row['LASTCK'].'</td>';
+			echo '</tr>';
+			
 		} 
 		
 		echo '</tbody></table>';
