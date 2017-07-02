@@ -5,6 +5,8 @@
 	//根据语言加载翻译文件
 	switch($lan)
 	{
-		case 'cn': require_once("Lang/zh_cn.php");
+		case 'cn': include("Lang/zh_cn.php");
 	}
+
+
 ?>

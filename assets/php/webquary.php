@@ -1,5 +1,5 @@
 <?php
-error_reporting(0);
+//error_reporting(0);
 header("Content-Type:text/html;charset=UTF-8");
 if(isset($_GET["IP"])) $IP = $_GET["IP"];
 if(isset($_GET["PORT"])) $PORT = $_GET["PORT"];
@@ -34,22 +34,22 @@ if($type == "ol")
 if($type == "player")
 {
 	//调用SAMP API
-	require "SampQueryAPI.php";
-	$query = new SampQueryAPI($IP, $PORT);
+	require "SampQuery.class.php";
+	$query = new SampQuery($IP, $PORT);
 	
-	if($query->isOnline())
+	if($query->connect())
 	{
 		$aInformation = $query->getInfo();
 		//header("Location: draw.php/?string="."在线玩家: ".$aInformation['players']."/".$aInformation['maxplayers']."");
 		
-		echo $aInformation['players']."/".$aInformation['maxplayers'];//显示在线玩家
+		echo $aInformation['players'];//显示在线玩家
 		die();
 		//DrawStringWithPicture($aInformation['players']."/".$aInformation['maxplayers']);
 		//echo "服务器在线:)";
 	}
 	else
 	{
-		echo "未知";
+		echo "ERROR";
 		die();
 		//DrawStringWithPicture();
 		
@@ -62,7 +62,7 @@ if($type == "mode")
 	require "SampQueryAPI.php";
 	$query = new SampQueryAPI($IP, $PORT);
 	
-	if($query->isOnline())
+	if($query->connect())
 	{
 		$aInformation = $query->getInfo();
 		//header("Location: draw.php/?string="."在线玩家: ".$aInformation['players']."/".$aInformation['maxplayers']."");
@@ -74,7 +74,7 @@ if($type == "mode")
 	}
 	else
 	{
-		echo "未知";
+		echo "ERROR";
 		die();
 		//DrawStringWithPicture();
 		

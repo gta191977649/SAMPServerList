@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="renderer" content="webkit">
 <!-- TemplateBeginEditable name="doctitle" -->
 <title>無題ドキュメント</title>
 <!-- TemplateEndEditable -->
@@ -23,7 +24,7 @@
 <body>
 	<div id="header">
 		<div class="am-g am-g-fixed">
-			<h1>SAMP Server Cacher<span style="font-size: 20%"> プロジェクトスパルウ</span></h1>
+			<h1><?php echo $LAN['SITE_NAME']; ?><span style="font-size: 20%"> プロジェクトスパルウ</span></h1>
 			
 		</div>
 	</div>
@@ -91,6 +92,7 @@
 	</div>
 	<footer>
 	<div class="am-g am-g-fixed">
+		<hr/>
 		<p style="text-align: center;">SAMP服务器搜藏列表</br/>(C)Project Sparrow 2017 <br/>By Episodes</p>
 	</div>
 </footer>

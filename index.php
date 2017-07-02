@@ -2,6 +2,7 @@
 <html><!-- InstanceBegin template="/Templates/Style.dwt.php" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
+<meta name="renderer" content="webkit">
 <!-- InstanceBeginEditable name="doctitle" -->
 <title>無題ドキュメント</title>
 <!-- InstanceEndEditable -->
@@ -23,7 +24,7 @@
 <body>
 	<div id="header">
 		<div class="am-g am-g-fixed">
-			<h1>SAMP Server Cacher<span style="font-size: 20%"> プロジェクトスパルウ</span></h1>
+			<h1><?php echo $LAN['SITE_NAME']; ?><span style="font-size: 20%"> プロジェクトスパルウ</span></h1>
 			
 		</div>
 	</div>
@@ -84,7 +85,37 @@
 </div>
   </header>
   	<div class="am-container">
-		<div class="am-g am-g-fixed"><!-- InstanceBeginEditable name="Main" --><h1>一览<hr/></h1>
+		<div class="am-g am-g-fixed"><!-- InstanceBeginEditable name="Main" -->
+		
+		<div class="am-panel-group " id="accordion">
+		  <div class="am-panel am-panel-default ">
+		  <div class="am-panel am-panel-default">
+			<div class="am-panel-hd ">
+			  <h4 class="am-panel-title" data-am-collapse="{parent: '#accordion', target: '#search'}"><?php echo $LAN['SERVER_SEARCH'] ?></h4>
+			</div>
+			<div id="search" class="am-panel-collapse am-collapse">
+			  <div class="am-panel-bd ">
+						<form action="index.php" method="post">
+						 <fieldset>
+							<div class="am-form-group">
+								<input type="text" class="am-form-field am-radius" placeholder="服务器名称" />
+							</div>
+							<div class="am-form-group">
+								<input type="text" class="am-form-field am-radius" placeholder="地图模式" />
+							</div>
+							<button type="submit" class="am-btn am-btn-default ">搜索</button>
+						  </fieldset>
+
+					</form>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		
+	
+		
+		<h1><?php echo $LAN['SERVER_TITLE'] ?><hr/></h1>
+		
 		<?php displayServers(); ?>
 		<!-- InstanceEndEditable -->
 			
@@ -93,6 +124,7 @@
 	</div>
 	<footer>
 	<div class="am-g am-g-fixed">
+		<hr/>
 		<p style="text-align: center;">SAMP服务器搜藏列表</br/>(C)Project Sparrow 2017 <br/>By Episodes</p>
 	</div>
 </footer>
